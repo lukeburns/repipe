@@ -1,14 +1,17 @@
 {
   "name": "repipe",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "For repiping streams",
   "main": "repipe.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "tap test.js"
   },
   "author": "Luke Burns <lukemburns@gmail.com> (http://lukeburns.com/)",
   "license": "ISC",
   "dependencies": {
     "through2": "^0.5.1"
+  },
+  "devDependencies": {
+    "tap": "^0.4.11"
   }
 }
