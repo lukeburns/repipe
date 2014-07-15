@@ -1,14 +1,14 @@
 ## repipe
 
-For repiping streams. Useful for laying down pipelines.
+For repiping streams. Useful for laying pipelines.
 
 ```
-var sequence = gzip.pipe(through()).pipe(process.stdout),
-	line = sequence.pipe(repipe(gzip, process.stdout));
+var sequence = cipher.pipe(decipher).pipe(process.stdout),
+	line = sequence.pipe(repipe(cipher, process.stdout));
     
 fs.createReadStream('README.md').pipe(line);
 ```
 becomes
 ```
-fs.createReadStream('README.md').pipe(gzip).pipe(through()).pipe(process.stdout)
+fs.createReadStream('README.md').pipe(cipher).pipe(decipher).pipe(process.stdout)
 ```
