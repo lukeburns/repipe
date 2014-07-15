@@ -14,7 +14,7 @@ test("pipeline equivalence test", function (t) {
 
 	var crypto1 = require('crypto').createCipher('aes-256-cbc', 'password');
 	var gzip1 = require('zlib').createGzip();
-	var line = repipe(gzip1, crypto1);
+	var line = repipe(crypto1, gzip1);
 
 	var pipeline1 = hello.pipe(crypto1.pipe(gzip1).pipe(line));
 
