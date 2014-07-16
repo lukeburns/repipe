@@ -1,8 +1,8 @@
 {
-  "name": "repipe",
+  "name": "through2-repipe",
   "version": "0.0.1",
   "description": "For repiping streams",
-  "main": "repipe.js",
+  "main": "index.js",
   "scripts": {
     "test": "tap test.js"
   },
