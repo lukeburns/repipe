@@ -6,12 +6,30 @@
   "scripts": {
     "test": "tap test.js"
   },
-  "author": "Luke Burns <lukemburns@gmail.com> (http://lukeburns.com/)",
-  "license": "ISC",
   "dependencies": {
     "through2": "^0.5.1"
   },
   "devDependencies": {
     "tap": "^0.4.11"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/lukeburns/repipe"
+  },
+  "keywords": [
+    "streams",
+    "through2",
+    "sequence",
+    "pipe",
+    "repipe",
+    "pipeline"
+  ],
+  "author": {
+    "name": "Luke Burns",
+    "email": "lukemburns@gmail.com"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lukeburns/repipe/issues"
   }
 }
